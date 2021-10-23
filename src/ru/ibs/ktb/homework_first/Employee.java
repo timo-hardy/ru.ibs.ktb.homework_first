@@ -54,4 +54,12 @@ public abstract class Employee {
     public void setMail(String mail) {
         this.mail = mail;
     }
+
+    public boolean isWork(){
+        return true;
+    }
+
+    public boolean isNotWork(){
+        return true;
+    }
 }

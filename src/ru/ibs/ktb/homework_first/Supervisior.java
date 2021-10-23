@@ -1,6 +1,6 @@
 package ru.ibs.ktb.homework_first;
 
-public class Supervisior extends Employee {
+public class Supervisior extends Employee implements ManagerImpl{
     private String password;
     private int bonusSalary;
 
@@ -28,5 +28,20 @@ public class Supervisior extends Employee {
 
     public Supervisior(String name, String surname, int age, String gender, String mail) {
         super(name, surname, age, gender, mail);
+    }
+
+    @Override
+    public String run() {
+        return "Supervisor running";
+    }
+
+    @Override
+    public boolean abuse() {
+        return false;
+    }
+
+    @Override
+    public boolean isWork() {
+        return super.isWork();
     }
 }

@@ -5,6 +5,13 @@ public class Trainee extends Employee {
     private int developmentExperience;
     private String urlGitHub;
 
+    public Trainee(String name, String surname, int age, String gender, String mail, String developmentLanguage, int developmentExperience, String urlGitHub) {
+        super(name, surname, age, gender, mail);
+        this.developmentLanguage = developmentLanguage;
+        this.developmentExperience = developmentExperience;
+        this.urlGitHub = urlGitHub;
+    }
+
     public String getDevelopmentLanguage() {
         return developmentLanguage;
     }
@@ -29,10 +36,12 @@ public class Trainee extends Employee {
         this.urlGitHub = urlGitHub;
     }
 
-    public Trainee(String name, String surname, int age, String gender, String mail, String developmentLanguage, int developmentExperience, String urlGitHub) {
-        super(name, surname, age, gender, mail);
-        this.developmentLanguage = developmentLanguage;
-        this.developmentExperience = developmentExperience;
-        this.urlGitHub = urlGitHub;
+    public String sayTrainee(){
+        return "Hello IBS";
+    }
+
+    @Override
+    public boolean isNotWork() {
+        return super.isNotWork();
     }
 }

@@ -36,4 +36,13 @@ public class Developer extends Employee {
     public void setProjects(String projects) {
         this.projects = projects;
     }
+
+    public String sayDeveloper() {
+        return "Hello";
+    }
+
+    @Override
+    public boolean isWork() {
+        return super.isWork();
+    }
 }
