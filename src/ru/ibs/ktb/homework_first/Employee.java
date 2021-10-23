@@ -1,5 +1,5 @@
 package ru.ibs.ktb.homework_first;
 
-public class Employee {
+public abstract class Employee {
 
 }
