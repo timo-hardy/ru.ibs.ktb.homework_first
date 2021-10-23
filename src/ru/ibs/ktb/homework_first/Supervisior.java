@@ -2,7 +2,7 @@ package ru.ibs.ktb.homework_first;
 
 public class Supervisior extends Employee {
     private String password;
-    private int salary;
+    private int bonusSalary;
 
     public String getPassword() {
         return password;
@@ -12,18 +12,18 @@ public class Supervisior extends Employee {
         this.password = password;
     }
 
-    public int getSalary() {
-        return salary;
+    public int getBonusSalary() {
+        return bonusSalary;
     }
 
-    public void setSalary(int salary) {
-        this.salary = salary;
+    public void setBonusSalary(int bonusSalary) {
+        this.bonusSalary = bonusSalary;
     }
 
-    public Supervisior(String name, String surname, int age, String gender, String mail, String password, int salary) {
+    public Supervisior(String name, String surname, int age, String gender, String mail, String password, int bonusSalary) {
         super(name, surname, age, gender, mail);
         this.password = password;
-        this.salary = salary;
+        this.bonusSalary = bonusSalary;
     }
 
     public Supervisior(String name, String surname, int age, String gender, String mail) {
