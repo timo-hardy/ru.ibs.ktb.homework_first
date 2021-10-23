@@ -1,14 +1,16 @@
 package ru.ibs.ktb.homework_first;
 
-public class Developer extends Employee{
+public class Developer extends Employee {
     private String developmentLanguage;
     private int developmentExperience;
+    private String projects;
 
     public Developer(String name, String surname, int age, String gender, String mail,
-                     String developmentLanguage, int developmentExperience) {
+                     String developmentLanguage, int developmentExperience, String projects) {
         super(name, surname, age, gender, mail);
         this.developmentLanguage = developmentLanguage;
         this.developmentExperience = developmentExperience;
+        this.projects = projects;
     }
 
     public String getDevelopmentLanguage() {
@@ -25,5 +27,13 @@ public class Developer extends Employee{
 
     public void setDevelopmentExperience(int developmentExperience) {
         this.developmentExperience = developmentExperience;
+    }
+
+    public String getProjects() {
+        return projects;
+    }
+
+    public void setProjects(String projects) {
+        this.projects = projects;
     }
 }
