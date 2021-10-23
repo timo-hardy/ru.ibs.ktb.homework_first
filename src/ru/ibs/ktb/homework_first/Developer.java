@@ -5,8 +5,7 @@ public class Developer extends Employee {
     private int developmentExperience;
     private String projects;
 
-    public Developer(String name, String surname, int age, String gender, String mail,
-                     String developmentLanguage, int developmentExperience, String projects) {
+    public Developer(String name, String surname, int age, String gender, String mail, String developmentLanguage, int developmentExperience, String projects) {
         super(name, surname, age, gender, mail);
         this.developmentLanguage = developmentLanguage;
         this.developmentExperience = developmentExperience;
