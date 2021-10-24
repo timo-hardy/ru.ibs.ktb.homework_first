@@ -43,8 +43,7 @@ public class Main {
                 )
         );
 
-        List<Employee> employeesList = new ArrayList<>();
-        employeesList.addAll(employeeSet);
+        List<Employee> employeesList = new ArrayList<>(employeeSet);
     }
 
 }
