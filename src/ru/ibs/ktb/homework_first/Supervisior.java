@@ -41,4 +41,9 @@ public class Supervisior extends Employee implements Manager {
     public boolean isWork() {
         return super.isWork();
     }
+
+    @Override
+    public boolean say() {
+        return false;
+    }
 }
