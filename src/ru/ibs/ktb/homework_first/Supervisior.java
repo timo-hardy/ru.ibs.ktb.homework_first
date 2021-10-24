@@ -1,6 +1,6 @@
 package ru.ibs.ktb.homework_first;
 
-public class Supervisior extends Employee implements ManagerImpl{
+public class Supervisior extends Employee implements Manager {
     private String password;
     private int bonusSalary;
 
