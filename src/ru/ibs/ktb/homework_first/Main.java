@@ -33,6 +33,18 @@ public class Main {
         );
 
         employeeSet.add(new Trainee(
+                        "Valya",
+                        "Mamaeva",
+                        20,
+                        "female",
+                        "mamaeva@mail.ru",
+                        "Java",
+                        4,
+                        "https//www.github.com/....."
+                )
+        );
+
+        employeeSet.add(new Trainee(
                         "Katya",
                         "Bobrova",
                         21,
@@ -44,11 +56,24 @@ public class Main {
                 )
         );
 
-        List<Employee> employeesList = new ArrayList<>(employeeSet)
-                .stream()
-                .filter(employesList -> employesList.getAge() > 21)
-                .collect(Collectors.toList());
+        employeeSet.add(new Trainee(
+                        "Katya",
+                        "Baranova",
+                        19,
+                        "female",
+                        "baranova@mail.ru",
+                        "Java",
+                        2,
+                        "https//www.github.com/....."
+                )
+        );
 
+
+        List<Employee> employeesList = new ArrayList<>(employeeSet) //
+                .stream()
+                .filter(e -> e.getAge() >= 25)
+                .collect(Collectors.toCollection(ArrayList::new));
+        System.out.println(employeesList);
 
 
         Employee security = new Employee("Vladimir", "Popov", 23, "male", "Popov@mail.ru") {
