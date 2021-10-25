@@ -62,4 +62,15 @@ public abstract class Employee {
     public boolean isNotWork(){
         return true;
     }
+
+    @Override
+    public String toString() {
+        return "Employee{" +
+                "name='" + name + '\'' +
+                ", surname='" + surname + '\'' +
+                ", age=" + age +
+                ", gender='" + gender + '\'' +
+                ", mail='" + mail + '\'' +
+                '}';
+    }
 }
