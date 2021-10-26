@@ -120,7 +120,6 @@ public class Main {
                 this.weapon = weapon;
             }
         };
-
-        security.setWeapon(false);
+        security.setWeapon(true);
     }
 }
