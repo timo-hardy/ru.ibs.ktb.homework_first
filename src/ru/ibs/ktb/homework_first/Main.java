@@ -102,7 +102,13 @@ public class Main {
 
 
         //Анонимный класс
-        Employee security = new Employee("Vladimir", "Popov", 23, "male", "Popov@mail.ru") {
+        var security = new Employee(
+                "Vladimir",
+                "Popov",
+                23,
+                "male",
+                "Popov@mail.ru"
+        ) {
 
             private boolean weapon;
 
@@ -110,65 +116,11 @@ public class Main {
                 return true;
             }
 
-            @Override
-            public String getName() {
-                return super.getName();
-            }
-
-            @Override
-            public void setName(String name) {
-                super.setName(name);
-            }
-
-            @Override
-            public String getSurname() {
-                return super.getSurname();
-            }
-
-            @Override
-            public void setSurname(String surname) {
-                super.setSurname(surname);
-            }
-
-            @Override
-            public int getAge() {
-                return super.getAge();
-            }
-
-            @Override
-            public void setAge(int age) {
-                super.setAge(age);
-            }
-
-            @Override
-            public String getGender() {
-                return super.getGender();
-            }
-
-            @Override
-            public void setGender(String gender) {
-                super.setGender(gender);
-            }
-
-            @Override
-            public String getMail() {
-                return super.getMail();
-            }
-
-            @Override
-            public void setMail(String mail) {
-                super.setMail(mail);
-            }
-
-            @Override
-            public boolean isWork() {
-                return super.isWork();
-            }
-
-            @Override
-            public boolean isNotWork() {
-                return super.isNotWork();
+            public void setWeapon(boolean weapon) {
+                this.weapon = weapon;
             }
         };
+
+        security.setWeapon(false);
     }
 }
