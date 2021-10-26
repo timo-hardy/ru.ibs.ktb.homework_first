@@ -113,7 +113,7 @@ public class Main {
             private boolean weapon;
 
             private boolean isWeapon() {
-                return true;
+                return weapon;
             }
 
             public void setWeapon(boolean weapon) {
