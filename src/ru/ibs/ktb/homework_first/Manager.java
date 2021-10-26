@@ -4,4 +4,5 @@ public interface Manager {
     String run();
     boolean abuse();
     boolean say();
+
 }

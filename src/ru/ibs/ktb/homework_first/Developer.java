@@ -40,6 +40,7 @@ public class Developer extends Employee {
         return "Hello";
     }
 
+
     @Override
     public boolean isWork() {
         return super.isWork();
